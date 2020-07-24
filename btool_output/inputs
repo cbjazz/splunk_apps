@@ -1,0 +1,801 @@
+/data/splunk/splunk/etc/system/default/inputs.conf                             [SSL]
+/data/splunk/splunk/etc/system/default/inputs.conf                             _rcvbuf = 1572864
+/data/splunk/splunk/etc/system/default/inputs.conf                             allowSslRenegotiation = true
+/data/splunk/splunk/etc/system/default/inputs.conf                             cipherSuite = ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256
+/data/splunk/splunk/etc/system/default/inputs.conf                             ecdhCurves = prime256v1, secp384r1, secp521r1
+/data/splunk/splunk/etc/system/local/inputs.conf                               host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/system/default/inputs.conf                             index = default
+/data/splunk/splunk/etc/system/default/inputs.conf                             sslQuietShutdown = false
+/data/splunk/splunk/etc/system/default/inputs.conf                             sslVersions = tls1.2
+/data/splunk/splunk/etc/apps/Splunk_TA_aws/local/inputs.conf                   [aws_cloudwatch://MyCloudWatchMetric_75696332-3126-45c7-b3f2-a3fbbd2f3515]
+/data/splunk/splunk/etc/apps/Splunk_TA_aws/local/inputs.conf                   aws_account = Changbai Choi
+/data/splunk/splunk/etc/apps/Splunk_TA_aws/local/inputs.conf                   aws_region = ap-northeast-2
+/data/splunk/splunk/etc/apps/Splunk_TA_aws/local/inputs.conf                   disabled = 0
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+index = default
+/data/splunk/splunk/etc/apps/Splunk_TA_aws/default/inputs.conf                 interval = 300
+/data/splunk/splunk/etc/apps/Splunk_TA_aws/local/inputs.conf                   metric_dimensions = [{"InstanceId":[".*"]}]
+/data/splunk/splunk/etc/apps/Splunk_TA_aws/local/inputs.conf                   metric_expiration = 3600
+/data/splunk/splunk/etc/apps/Splunk_TA_aws/local/inputs.conf                   metric_names = ".*"
+/data/splunk/splunk/etc/apps/Splunk_TA_aws/local/inputs.conf                   metric_namespace = AWS/EC2
+/data/splunk/splunk/etc/apps/Splunk_TA_aws/local/inputs.conf                   period = 300
+/data/splunk/splunk/etc/apps/Splunk_TA_aws/local/inputs.conf                   polling_interval = 3600
+/data/splunk/splunk/etc/apps/Splunk_TA_aws/default/inputs.conf                 python.version = python3
+/data/splunk/splunk/etc/apps/Splunk_TA_aws/local/inputs.conf                   query_window_size = 24
+/data/splunk/splunk/etc/apps/Splunk_TA_aws/local/inputs.conf                   sourcetype = aws:cloudwatch
+/data/splunk/splunk/etc/apps/Splunk_TA_aws/default/inputs.conf                 start_by_shell = false
+/data/splunk/splunk/etc/apps/Splunk_TA_aws/local/inputs.conf                   statistics = ["Average","Sum","SampleCount","Maximum","Minimum"]
+/data/splunk/splunk/etc/apps/Splunk_TA_aws/local/inputs.conf                   use_metric_format = false
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/local/inputs.conf       [aws_input_restarter://restarter]
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/local/inputs.conf       disabled = 0
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+index = default
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/inputs.conf     interval = 600
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/inputs.conf     log_level = WARNING
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/inputs.conf     python.version = python3
+/data/splunk/splunk/etc/apps/Splunk_TA_aws/local/inputs.conf                   [aws_sqs_based_s3://MyCloudTrailInput]
+/data/splunk/splunk/etc/apps/Splunk_TA_aws/local/inputs.conf                   aws_account = Changbai Choi
+/data/splunk/splunk/etc/apps/Splunk_TA_aws/local/inputs.conf                   disabled = 1
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+index = default
+/data/splunk/splunk/etc/apps/Splunk_TA_aws/local/inputs.conf                   interval = 300
+/data/splunk/splunk/etc/apps/Splunk_TA_aws/default/inputs.conf                 python.version = python3
+/data/splunk/splunk/etc/apps/Splunk_TA_aws/local/inputs.conf                   s3_file_decoder = CloudTrail
+/data/splunk/splunk/etc/apps/Splunk_TA_aws/local/inputs.conf                   sourcetype = aws:cloudtrail
+/data/splunk/splunk/etc/apps/Splunk_TA_aws/local/inputs.conf                   sqs_batch_size = 10
+/data/splunk/splunk/etc/apps/Splunk_TA_aws/local/inputs.conf                   sqs_queue_region = ap-northeast-2
+/data/splunk/splunk/etc/apps/Splunk_TA_aws/local/inputs.conf                   sqs_queue_url = https://ap-northeast-2.queue.amazonaws.com/580244878434/cbjazz-cloudtrail-queue
+/data/splunk/splunk/etc/system/default/inputs.conf                             [batch:///data/splunk/splunk/var/run/splunk/search_telemetry/*search_telemetry.json]
+/data/splunk/splunk/etc/system/default/inputs.conf                             _rcvbuf = 1572864
+/data/splunk/splunk/etc/system/default/inputs.conf                             crcSalt = <SOURCE>
+/data/splunk/splunk/etc/system/local/inputs.conf                               host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/system/default/inputs.conf                             index = _introspection
+/data/splunk/splunk/etc/system/default/inputs.conf                             log_on_completion = 0
+/data/splunk/splunk/etc/system/default/inputs.conf                             move_policy = sinkhole
+/data/splunk/splunk/etc/system/default/inputs.conf                             sourcetype = search_telemetry
+/data/splunk/splunk/etc/system/default/inputs.conf                             [batch:///data/splunk/splunk/var/spool/splunk]
+/data/splunk/splunk/etc/system/default/inputs.conf                             _rcvbuf = 1572864
+/data/splunk/splunk/etc/system/default/inputs.conf                             crcSalt = <SOURCE>
+/data/splunk/splunk/etc/system/local/inputs.conf                               host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/system/default/inputs.conf                             index = default
+/data/splunk/splunk/etc/system/default/inputs.conf                             move_policy = sinkhole
+/data/splunk/splunk/etc/system/default/inputs.conf                             [batch:///data/splunk/splunk/var/spool/splunk/...stash_new]
+/data/splunk/splunk/etc/system/default/inputs.conf                             _rcvbuf = 1572864
+/data/splunk/splunk/etc/system/default/inputs.conf                             crcSalt = <SOURCE>
+/data/splunk/splunk/etc/system/local/inputs.conf                               host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/system/default/inputs.conf                             index = default
+/data/splunk/splunk/etc/system/default/inputs.conf                             move_policy = sinkhole
+/data/splunk/splunk/etc/system/default/inputs.conf                             queue = stashparsing
+/data/splunk/splunk/etc/system/default/inputs.conf                             sourcetype = stash_new
+/data/splunk/splunk/etc/system/default/inputs.conf                             [blacklist:/data/splunk/splunk/etc/auth]
+/data/splunk/splunk/etc/system/default/inputs.conf                             _rcvbuf = 1572864
+/data/splunk/splunk/etc/system/local/inputs.conf                               host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/system/default/inputs.conf                             index = default
+/data/splunk/splunk/etc/system/default/inputs.conf                             [blacklist:/data/splunk/splunk/etc/passwd]
+/data/splunk/splunk/etc/system/default/inputs.conf                             _rcvbuf = 1572864
+/data/splunk/splunk/etc/system/local/inputs.conf                               host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/system/default/inputs.conf                             index = default
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       [configure_itsi://splunko]
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       disabled = 1
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+index = default
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       log_level = INFO
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/local/inputs.conf       [em_entity_class_manager://job]
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/local/inputs.conf       disabled = 0
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+index = default
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/inputs.conf     interval = -1
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/inputs.conf     log_level = WARNING
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/inputs.conf     python.version = python3
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/local/inputs.conf       [em_entity_migration://job]
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/local/inputs.conf       disabled = 0
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+index = default
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/inputs.conf     interval = 60
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/inputs.conf     log_level = WARNING
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/inputs.conf     publish_url = /servicesNS/nobody/SA-ITOA/itoa_entity_exchange/publish
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/inputs.conf     python.version = python3
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/local/inputs.conf       [em_group_metadata_manager://job]
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/local/inputs.conf       disabled = 0
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+index = default
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/inputs.conf     interval = 60
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/inputs.conf     log_level = WARNING
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/inputs.conf     python.version = python3
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/inputs.conf     [em_migration_controller://job]
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/inputs.conf     dry_run = 0
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+index = default
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/inputs.conf     interval = -1
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/inputs.conf     log_level = INFO
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/inputs.conf     python.version = python3
+/data/splunk/splunk/etc/system/default/inputs.conf                             [fschange:/data/splunk/splunk/etc]
+/data/splunk/splunk/etc/system/default/inputs.conf                             _rcvbuf = 1572864
+/data/splunk/splunk/etc/system/default/inputs.conf                             delayInMills = 100
+/data/splunk/splunk/etc/system/default/inputs.conf                             filesPerDelay = 10
+/data/splunk/splunk/etc/system/default/inputs.conf                             followLinks = false
+/data/splunk/splunk/etc/system/default/inputs.conf                             fullEvent = false
+/data/splunk/splunk/etc/system/default/inputs.conf                             hashMaxSize = -1
+/data/splunk/splunk/etc/system/local/inputs.conf                               host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/system/default/inputs.conf                             index = default
+/data/splunk/splunk/etc/system/default/inputs.conf                             pollPeriod = 600
+/data/splunk/splunk/etc/system/default/inputs.conf                             recurse = true
+/data/splunk/splunk/etc/system/default/inputs.conf                             sendEventMaxSize = -1
+/data/splunk/splunk/etc/system/default/inputs.conf                             signedaudit = true
+/data/splunk/splunk/etc/apps/git_for_splunk/local/inputs.conf                  [gitforsplunk://splunk_git]
+/data/splunk/splunk/etc/apps/git_for_splunk/local/inputs.conf                  btool_conf_files = inputs, indexes, fields, props, limits, outputs, props, transforms, savedsearches, macros
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/apps/git_for_splunk/local/inputs.conf                  include_btool_output = 1
+/data/splunk/splunk/etc/apps/git_for_splunk/local/inputs.conf                  index = main
+/data/splunk/splunk/etc/apps/git_for_splunk/local/inputs.conf                  interval = 60
+/data/splunk/splunk/etc/apps/git_for_splunk/default/inputs.conf                python.version = python3
+/data/splunk/splunk/etc/apps/git_for_splunk/local/inputs.conf                  remote_push = 1
+/data/splunk/splunk/etc/apps/git_for_splunk/local/inputs.conf                  repository_directory = /data/splunk/splunk_git_repo
+/data/splunk/splunk/etc/apps/git_for_splunk/default/inputs.conf                sourcetype = gitforsplunk
+/data/splunk/splunk/etc/apps/git_for_splunk/default/inputs.conf                start_by_shell = false
+/data/splunk/splunk/etc/apps/git_for_splunk/local/inputs.conf                  working_directory = /data/splunk/splunk/etc/apps/myapp
+/data/splunk/splunk/etc/apps/splunk_httpinput/local/inputs.conf                [http]
+/data/splunk/splunk/etc/system/default/inputs.conf                             _rcvbuf = 1572864
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       ackIdleCleanup = true
+/data/splunk/splunk/etc/apps/splunk_httpinput/default/inputs.conf              allowSslCompression = true
+/data/splunk/splunk/etc/apps/splunk_httpinput/default/inputs.conf              allowSslRenegotiation = true
+/data/splunk/splunk/etc/apps/splunk_httpinput/default/inputs.conf              dedicatedIoThreads = 2
+/data/splunk/splunk/etc/apps/splunk_httpinput/local/inputs.conf                disabled = 0
+/data/splunk/splunk/etc/apps/splunk_httpinput/local/inputs.conf                enableSSL = 1
+/data/splunk/splunk/etc/system/local/inputs.conf                               host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/system/default/inputs.conf                             index = default
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       maxIdleTime = 60
+/data/splunk/splunk/etc/apps/splunk_httpinput/default/inputs.conf              maxSockets = 0
+/data/splunk/splunk/etc/apps/splunk_httpinput/default/inputs.conf              maxThreads = 0
+/data/splunk/splunk/etc/apps/splunk_httpinput/default/inputs.conf              port = 8088
+/data/splunk/splunk/etc/apps/splunk_httpinput/default/inputs.conf              sslVersions = *,-ssl2
+/data/splunk/splunk/etc/apps/splunk_httpinput/default/inputs.conf              useDeploymentServer = 0
+/data/splunk/splunk/etc/apps/itsi/local/inputs.conf                            [http://Auto Generated ITSI Event Management Token]
+/data/splunk/splunk/etc/system/default/inputs.conf                             _rcvbuf = 1572864
+/data/splunk/splunk/etc/apps/itsi/local/inputs.conf                            disabled = False
+/data/splunk/splunk/etc/system/local/inputs.conf                               host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/apps/itsi/local/inputs.conf                            index = itsi_tracked_alerts
+/data/splunk/splunk/etc/apps/itsi/local/inputs.conf                            indexes = itsi_tracked_alerts
+/data/splunk/splunk/etc/apps/itsi/local/inputs.conf                            sourcetype = itsi_notable:event
+/data/splunk/splunk/etc/apps/itsi/local/inputs.conf                            token = d4f11bd2-eff8-4eaf-a993-d55c0d867fdb
+/data/splunk/splunk/etc/apps/itsi/local/inputs.conf                            [http://Auto Generated ITSI Notable Event Retention Policy Token]
+/data/splunk/splunk/etc/system/default/inputs.conf                             _rcvbuf = 1572864
+/data/splunk/splunk/etc/apps/itsi/local/inputs.conf                            disabled = False
+/data/splunk/splunk/etc/system/local/inputs.conf                               host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/apps/itsi/local/inputs.conf                            index = itsi_notable_archive
+/data/splunk/splunk/etc/apps/itsi/local/inputs.conf                            indexes = itsi_notable_archive
+/data/splunk/splunk/etc/apps/itsi/local/inputs.conf                            sourcetype = itsi_notable:archive
+/data/splunk/splunk/etc/apps/itsi/local/inputs.conf                            token = ef039ac0-7511-4cf6-8941-750b78c74418
+/data/splunk/splunk/etc/apps/itsi/local/inputs.conf                            [http://Auto Generated ITSI Notable Index Audit Token]
+/data/splunk/splunk/etc/system/default/inputs.conf                             _rcvbuf = 1572864
+/data/splunk/splunk/etc/apps/itsi/local/inputs.conf                            disabled = False
+/data/splunk/splunk/etc/system/local/inputs.conf                               host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/apps/itsi/local/inputs.conf                            index = itsi_notable_audit
+/data/splunk/splunk/etc/apps/itsi/local/inputs.conf                            indexes = itsi_notable_audit
+/data/splunk/splunk/etc/apps/itsi/local/inputs.conf                            source = Notable Event Audit
+/data/splunk/splunk/etc/apps/itsi/local/inputs.conf                            sourcetype = itsi_notable:audit
+/data/splunk/splunk/etc/apps/itsi/local/inputs.conf                            token = ffbf3655-7b52-4ebf-9dff-ba9919f76430
+/data/splunk/splunk/etc/apps/ml4ninja/local/inputs.conf                        [http://CW-logging]
+/data/splunk/splunk/etc/system/default/inputs.conf                             _rcvbuf = 1572864
+/data/splunk/splunk/etc/apps/ml4ninja/local/inputs.conf                        disabled = 0
+/data/splunk/splunk/etc/system/local/inputs.conf                               host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/apps/ml4ninja/local/inputs.conf                        index = main
+/data/splunk/splunk/etc/apps/ml4ninja/local/inputs.conf                        indexes = main
+/data/splunk/splunk/etc/apps/ml4ninja/local/inputs.conf                        token = 5a831db7-8c60-49bd-a4e1-cc58e12eb69f
+/data/splunk/splunk/etc/apps/itsi/local/inputs.conf                            [http://itsi_group_alerts_sync_token]
+/data/splunk/splunk/etc/system/default/inputs.conf                             _rcvbuf = 1572864
+/data/splunk/splunk/etc/apps/itsi/local/inputs.conf                            disabled = False
+/data/splunk/splunk/etc/system/local/inputs.conf                               host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/apps/itsi/local/inputs.conf                            index = itsi_grouped_alerts
+/data/splunk/splunk/etc/apps/itsi/local/inputs.conf                            indexes = itsi_grouped_alerts
+/data/splunk/splunk/etc/apps/itsi/local/inputs.conf                            source = itsi_group_alerts
+/data/splunk/splunk/etc/apps/itsi/local/inputs.conf                            sourcetype = itsi_notable:group
+/data/splunk/splunk/etc/apps/itsi/local/inputs.conf                            token = 348cc52b-46e4-4f08-8cd2-b71462806f5c
+/data/splunk/splunk/etc/apps/itsi/local/inputs.conf                            useACK = 1
+/data/splunk/splunk/etc/apps/itsi/local/inputs.conf                            [http://itsi_group_alerts_token]
+/data/splunk/splunk/etc/system/default/inputs.conf                             _rcvbuf = 1572864
+/data/splunk/splunk/etc/apps/itsi/local/inputs.conf                            disabled = False
+/data/splunk/splunk/etc/system/local/inputs.conf                               host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/apps/itsi/local/inputs.conf                            index = itsi_grouped_alerts
+/data/splunk/splunk/etc/apps/itsi/local/inputs.conf                            indexes = itsi_grouped_alerts
+/data/splunk/splunk/etc/apps/itsi/local/inputs.conf                            source = itsi_group_alerts
+/data/splunk/splunk/etc/apps/itsi/local/inputs.conf                            sourcetype = itsi_notable:group
+/data/splunk/splunk/etc/apps/itsi/local/inputs.conf                            token = a1c85833-f6e7-4581-ab81-0c92dcaf31cc
+/data/splunk/splunk/etc/apps/itsi/local/inputs.conf                            [http://itsi_group_comments_token]
+/data/splunk/splunk/etc/system/default/inputs.conf                             _rcvbuf = 1572864
+/data/splunk/splunk/etc/apps/itsi/local/inputs.conf                            disabled = False
+/data/splunk/splunk/etc/system/local/inputs.conf                               host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/apps/itsi/local/inputs.conf                            index = itsi_grouped_alerts
+/data/splunk/splunk/etc/apps/itsi/local/inputs.conf                            indexes = itsi_grouped_alerts
+/data/splunk/splunk/etc/apps/itsi/local/inputs.conf                            source = Notable Event Comment
+/data/splunk/splunk/etc/apps/itsi/local/inputs.conf                            sourcetype = itsi_notable:comment
+/data/splunk/splunk/etc/apps/itsi/local/inputs.conf                            token = 1283c24f-395e-492b-8260-d3cf7e572bbd
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/local/inputs.conf       [http://kubernetes]
+/data/splunk/splunk/etc/system/default/inputs.conf                             _rcvbuf = 1572864
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/local/inputs.conf       disabled = 0
+/data/splunk/splunk/etc/system/local/inputs.conf                               host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/local/inputs.conf       index = em_metrics
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/local/inputs.conf       indexes = em_metrics
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/local/inputs.conf       token = d7f9e53b-897f-4df1-85ad-c35a6f7764ba
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/local/inputs.conf       [http://linux]
+/data/splunk/splunk/etc/system/default/inputs.conf                             _rcvbuf = 1572864
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/local/inputs.conf       disabled = 0
+/data/splunk/splunk/etc/system/local/inputs.conf                               host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/local/inputs.conf       index = em_metrics
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/local/inputs.conf       indexes = em_metrics
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/local/inputs.conf       token = e67626ef-77db-412f-88f1-80cbc022a404
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       [itsi_age_kpi_alert_value_cache://age_kpi_alert_value_cache]
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       disabled = 0
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+index = default
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       interval = 900
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       log_level = INFO
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       retentionTimeInSec = 1800
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       [itsi_async_csv_loader://async_csv_loader]
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       disabled = 0
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+index = default
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       interval = 10
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       log_level = INFO
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       [itsi_backfill://backfiller]
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       disabled = 0
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+index = default
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       interval = 600
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       log_level = INFO
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       [itsi_backup_restore://itsi_backup_restore]
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       disabled = 0
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+index = default
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       interval = 5
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       [itsi_consumer://consumer1]
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       disabled = 0
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+index = default
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       interval = 5
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       log_level = INFO
+/data/splunk/splunk/etc/apps/DA-ITSI-APPSERVER/default/inputs.conf             [itsi_csv_import://DA-ITSI-APPSERVER-ApplicationServer_ApplicationServerInstances_Import]
+/data/splunk/splunk/etc/apps/DA-ITSI-APPSERVER/default/inputs.conf             disabled = 1
+/data/splunk/splunk/etc/apps/DA-ITSI-APPSERVER/default/inputs.conf             entity_identifier_fields = application_server
+/data/splunk/splunk/etc/apps/DA-ITSI-APPSERVER/default/inputs.conf             entity_informational_fields = itsi_role,vendor_product,product_family_abbreviation,version_number,vendor_product_runtime,vendor_product_runtime_version,full_host_name,product_family
+/data/splunk/splunk/etc/apps/DA-ITSI-APPSERVER/default/inputs.conf             entity_title_field = application_server
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/apps/DA-ITSI-APPSERVER/default/inputs.conf             import_from_search = 1
+index = default
+/data/splunk/splunk/etc/apps/DA-ITSI-APPSERVER/default/inputs.conf             index_earliest = -4h
+/data/splunk/splunk/etc/apps/DA-ITSI-APPSERVER/default/inputs.conf             index_latest = now
+/data/splunk/splunk/etc/apps/DA-ITSI-APPSERVER/default/inputs.conf             interval = 0 2,6,10,14,18,22 * * *
+/data/splunk/splunk/etc/apps/DA-ITSI-APPSERVER/default/inputs.conf             search_string = | savedsearch DA-ITSI-APPSERVER-ApplicationServer_ApplicationServerInstances_Search
+/data/splunk/splunk/etc/apps/DA-ITSI-APPSERVER/default/inputs.conf             service_title_field = null
+/data/splunk/splunk/etc/apps/DA-ITSI-APPSERVER/default/inputs.conf             update_type = UPSERT
+/data/splunk/splunk/etc/apps/DA-ITSI-DATABASE/default/inputs.conf              [itsi_csv_import://DA-ITSI-DATABASE-Database_Instances_Import]
+/data/splunk/splunk/etc/apps/DA-ITSI-DATABASE/default/inputs.conf              disabled = 1
+/data/splunk/splunk/etc/apps/DA-ITSI-DATABASE/default/inputs.conf              entity_identifier_fields = database_instance
+/data/splunk/splunk/etc/apps/DA-ITSI-DATABASE/default/inputs.conf              entity_informational_fields = host, itsi_role, vendor, vendor_product, version, port, storage_engine, availability, character_set, collation
+/data/splunk/splunk/etc/apps/DA-ITSI-DATABASE/default/inputs.conf              entity_title_field = database_instance
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/apps/DA-ITSI-DATABASE/default/inputs.conf              import_from_search = 1
+index = default
+/data/splunk/splunk/etc/apps/DA-ITSI-DATABASE/default/inputs.conf              index_earliest = -4h
+/data/splunk/splunk/etc/apps/DA-ITSI-DATABASE/default/inputs.conf              index_latest = now
+/data/splunk/splunk/etc/apps/DA-ITSI-DATABASE/default/inputs.conf              interval = 0 1,5,9,13,17,21 * * *
+/data/splunk/splunk/etc/apps/DA-ITSI-DATABASE/default/inputs.conf              search_string = | savedsearch DA-ITSI-DATABASE-Database_Instances_Search
+/data/splunk/splunk/etc/apps/DA-ITSI-DATABASE/default/inputs.conf              service_title_field = null
+/data/splunk/splunk/etc/apps/DA-ITSI-DATABASE/default/inputs.conf              update_type = UPSERT
+/data/splunk/splunk/etc/apps/DA-ITSI-EUEM/default/inputs.conf                  [itsi_csv_import://DA-ITSI-EUEM-Application_Entity_Import]
+/data/splunk/splunk/etc/apps/DA-ITSI-EUEM/default/inputs.conf                  disabled = 1
+/data/splunk/splunk/etc/apps/DA-ITSI-EUEM/default/inputs.conf                  entity_identifier_fields = application_id
+/data/splunk/splunk/etc/apps/DA-ITSI-EUEM/default/inputs.conf                  entity_informational_fields = package_name, platform, app_environment, itsi_role
+/data/splunk/splunk/etc/apps/DA-ITSI-EUEM/default/inputs.conf                  entity_title_field = application_title
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/apps/DA-ITSI-EUEM/default/inputs.conf                  import_from_search = 1
+index = default
+/data/splunk/splunk/etc/apps/DA-ITSI-EUEM/default/inputs.conf                  index_earliest = -4h
+/data/splunk/splunk/etc/apps/DA-ITSI-EUEM/default/inputs.conf                  index_latest = now
+/data/splunk/splunk/etc/apps/DA-ITSI-EUEM/default/inputs.conf                  interval = 0 0,4,8,12,16,20 * * *
+/data/splunk/splunk/etc/apps/DA-ITSI-EUEM/default/inputs.conf                  search_string = | savedsearch DA-ITSI-EUEM_kpi_entity
+/data/splunk/splunk/etc/apps/DA-ITSI-EUEM/default/inputs.conf                  service_title_field = null
+/data/splunk/splunk/etc/apps/DA-ITSI-EUEM/default/inputs.conf                  update_type = UPSERT
+/data/splunk/splunk/etc/apps/DA-ITSI-LB/default/inputs.conf                    [itsi_csv_import://DA-ITSI-LB-Loadbalancer_Entity_Import]
+/data/splunk/splunk/etc/apps/DA-ITSI-LB/default/inputs.conf                    disabled = 1
+/data/splunk/splunk/etc/apps/DA-ITSI-LB/default/inputs.conf                    entity_identifier_fields = host
+/data/splunk/splunk/etc/apps/DA-ITSI-LB/default/inputs.conf                    entity_informational_fields = itsi_role,vendor,cpu_count,version,memory
+/data/splunk/splunk/etc/apps/DA-ITSI-LB/default/inputs.conf                    entity_title_field = host
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/apps/DA-ITSI-LB/default/inputs.conf                    import_from_search = 1
+index = default
+/data/splunk/splunk/etc/apps/DA-ITSI-LB/default/inputs.conf                    index_earliest = -4h
+/data/splunk/splunk/etc/apps/DA-ITSI-LB/default/inputs.conf                    index_latest = now
+/data/splunk/splunk/etc/apps/DA-ITSI-LB/default/inputs.conf                    interval = 0 0,4,8,12,16,20 * * *
+/data/splunk/splunk/etc/apps/DA-ITSI-LB/default/inputs.conf                    search_string = | savedsearch DA-ITSI-LB-LoadBalancer_Entity_Search
+/data/splunk/splunk/etc/apps/DA-ITSI-LB/default/inputs.conf                    service_title_field = null
+/data/splunk/splunk/etc/apps/DA-ITSI-LB/default/inputs.conf                    update_type = UPSERT
+/data/splunk/splunk/etc/apps/DA-ITSI-OS/default/inputs.conf                    [itsi_csv_import://DA-ITSI-OS-OS_Hosts_Import]
+/data/splunk/splunk/etc/apps/DA-ITSI-OS/default/inputs.conf                    disabled = 1
+/data/splunk/splunk/etc/apps/DA-ITSI-OS/default/inputs.conf                    entity_identifier_fields = host
+/data/splunk/splunk/etc/apps/DA-ITSI-OS/default/inputs.conf                    entity_informational_fields = family,version,vendor_product,itsi_role,cpu_cores,memory,cpu_architecture
+/data/splunk/splunk/etc/apps/DA-ITSI-OS/default/inputs.conf                    entity_title_field = host
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/apps/DA-ITSI-OS/default/inputs.conf                    import_from_search = 1
+index = default
+/data/splunk/splunk/etc/apps/DA-ITSI-OS/default/inputs.conf                    index_earliest = -4h
+/data/splunk/splunk/etc/apps/DA-ITSI-OS/default/inputs.conf                    index_latest = now
+/data/splunk/splunk/etc/apps/DA-ITSI-OS/default/inputs.conf                    interval = 0 0,4,8,12,16,20 * * *
+/data/splunk/splunk/etc/apps/DA-ITSI-OS/default/inputs.conf                    search_string = | savedsearch DA-ITSI-OS-OS_Hosts_Search
+/data/splunk/splunk/etc/apps/DA-ITSI-OS/default/inputs.conf                    service_title_field = null
+/data/splunk/splunk/etc/apps/DA-ITSI-OS/default/inputs.conf                    update_type = UPSERT
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               [itsi_csv_import://DA-ITSI-STORAGE-Disk_Import]
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               disabled = 1
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               entity_description_column = description
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               entity_identifier_fields = disk_name,disk_id
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               entity_informational_fields = itsi_role,type,array_id,disk_type,storage_capacity,storage_capacity_gb,vendor,vendor_product,pool_id,pool_name,raid_group
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               entity_title_field = disk_id
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               import_from_search = 1
+index = default
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               index_earliest = -4h
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               index_latest = now
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               interval = 0 0,4,8,12,16,20 * * *
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               search_string = | savedsearch DA-ITSI-STORAGE-Disk_Entity_Search
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               service_title_field = null
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               update_type = UPSERT
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               [itsi_csv_import://DA-ITSI-STORAGE-LUN_Import]
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               disabled = 1
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               entity_description_column = description
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               entity_identifier_fields = lun_name,lun_id
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               entity_informational_fields = itsi_role,type,lun_path,serial,accessible,storage_capacity,storage_capacity_gb,volume_id,volume_name,pool_id,pool_name,array_id
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               entity_title_field = lun_id
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               import_from_search = 1
+index = default
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               index_earliest = -4h
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               index_latest = now
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               interval = 0 3,7,11,15,19,23 * * *
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               search_string = | savedsearch DA-ITSI-STORAGE-LUN_Entity_Search
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               service_title_field = null
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               update_type = UPSERT
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               [itsi_csv_import://DA-ITSI-STORAGE-Storage_Array_Import]
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               disabled = 1
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               entity_description_column = description
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               entity_identifier_fields = array_name,array_id
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               entity_informational_fields = itsi_role,type,vendor,vendor_product,os,logical_cpu_count,mem_capacity,ip,controller_mode,array_type
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               entity_title_field = array_id
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               import_from_search = 1
+index = default
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               index_earliest = -4h
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               index_latest = now
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               interval = 0 0,4,8,12,16,20 * * *
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               search_string = | savedsearch DA-ITSI-STORAGE-Storage_Array_Entity_Search
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               service_title_field = null
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               update_type = UPSERT
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               [itsi_csv_import://DA-ITSI-STORAGE-Storage_Pool_Import]
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               disabled = 1
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               entity_description_column = description
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               entity_identifier_fields = pool_name,pool_id
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               entity_informational_fields = itsi_role,type,array_id,storage_used,storage_capacity,storage_capacity_gb
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               entity_title_field = pool_id
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               import_from_search = 1
+index = default
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               index_earliest = -4h
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               index_latest = now
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               interval = 0 1,5,9,13,17,21 * * *
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               search_string = | savedsearch DA-ITSI-STORAGE-Storage_Pool_Entity_Search
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               service_title_field = null
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               update_type = UPSERT
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               [itsi_csv_import://DA-ITSI-STORAGE-Volume_Import]
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               disabled = 1
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               entity_description_column = description
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               entity_identifier_fields = volume_name,volume_id
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               entity_informational_fields = itsi_role,type,pool_id,pool_name,array_id,storage_capacity,storage_capacity_gb
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               entity_title_field = volume_id
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               import_from_search = 1
+index = default
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               index_earliest = -4h
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               index_latest = now
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               interval = 0 2,6,10,14,18 * * *
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               search_string = | savedsearch DA-ITSI-STORAGE-Volume_Entity_Search
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               service_title_field = null
+/data/splunk/splunk/etc/apps/DA-ITSI-STORAGE/default/inputs.conf               update_type = UPSERT
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        [itsi_csv_import://DA-ITSI-TELEGRAF-KAFKA-entity_import_kafka_brokers]
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        entity_identifier_fields = kafka_broker
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        entity_informational_fields = itsi_role,env,label
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        entity_title_field = kafka_broker
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        import_from_search = 1
+index = default
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        index_earliest = -4h
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        index_latest = now
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        interval = 1 0,4,8,12,16,20 * * *
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        search_string = | savedsearch DA-ITSI-TELEGRAF-KAFKA-Inventory_Search_kafka_brokers
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        service_title_field = null
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        update_type = UPSERT
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        [itsi_csv_import://DA-ITSI-TELEGRAF-KAFKA-entity_import_kafka_burrow_group_consumers]
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        entity_identifier_fields = kafka_group_consumer
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        entity_informational_fields = itsi_role,env,label,cluster
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        entity_title_field = kafka_group_consumer
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        import_from_search = 1
+index = default
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        index_earliest = -4h
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        index_latest = now
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        interval = 9 0,4,8,12,16,20 * * *
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        search_string = | savedsearch DA-ITSI-TELEGRAF-KAFKA-Inventory_Search_kafka_burrow_group_consumers
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        service_title_field = null
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        update_type = UPSERT
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        [itsi_csv_import://DA-ITSI-TELEGRAF-KAFKA-entity_import_kafka_connect]
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        entity_identifier_fields = kafka_connect
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        entity_informational_fields = itsi_role,env,label
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        entity_title_field = kafka_connect
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        import_from_search = 1
+index = default
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        index_earliest = -4h
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        index_latest = now
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        interval = 2 0,4,8,12,16,20 * * *
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        search_string = | savedsearch DA-ITSI-TELEGRAF-KAFKA-Inventory_Search_kafka_connect
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        service_title_field = null
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        update_type = UPSERT
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        [itsi_csv_import://DA-ITSI-TELEGRAF-KAFKA-entity_import_kafka_kafka-rest]
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        entity_identifier_fields = kafka_rest
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        entity_informational_fields = itsi_role,env,label
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        entity_title_field = kafka_rest
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        import_from_search = 1
+index = default
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        index_earliest = -4h
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        index_latest = now
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        interval = 7 0,4,8,12,16,20 * * *
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        search_string = | savedsearch DA-ITSI-TELEGRAF-KAFKA-Inventory_Search_kafka-kafka-rest
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        service_title_field = null
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        update_type = UPSERT
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        [itsi_csv_import://DA-ITSI-TELEGRAF-KAFKA-entity_import_kafka_ksql-server]
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        entity_identifier_fields = kafka_ksql_server
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        entity_informational_fields = itsi_role,env,label
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        entity_title_field = kafka_ksql_server
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        import_from_search = 1
+index = default
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        index_earliest = -4h
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        index_latest = now
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        interval = 6 0,4,8,12,16,20 * * *
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        search_string = | savedsearch DA-ITSI-TELEGRAF-KAFKA-Inventory_Search_kafka-ksql-server
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        service_title_field = null
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        update_type = UPSERT
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        [itsi_csv_import://DA-ITSI-TELEGRAF-KAFKA-entity_import_kafka_linkedin_kafka_monitors]
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        entity_identifier_fields = kafka_monitor
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        entity_informational_fields = itsi_role,env,label
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        entity_title_field = kafka_monitor
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        import_from_search = 1
+index = default
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        index_earliest = -4h
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        index_latest = now
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        interval = 8 0,4,8,12,16,20 * * *
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        search_string = | savedsearch DA-ITSI-TELEGRAF-KAFKA-Inventory_Search_linkedin_kafka_monitors
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        service_title_field = null
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        update_type = UPSERT
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        [itsi_csv_import://DA-ITSI-TELEGRAF-KAFKA-entity_import_kafka_schema-registry]
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        entity_identifier_fields = kafka_schema_registry
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        entity_informational_fields = itsi_role,env,label
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        entity_title_field = kafka_schema_registry
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        import_from_search = 1
+index = default
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        index_earliest = -4h
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        index_latest = now
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        interval = 5 0,4,8,12,16,20 * * *
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        search_string = | savedsearch DA-ITSI-TELEGRAF-KAFKA-Inventory_Search_kafka_schema-registry
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        service_title_field = null
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        update_type = UPSERT
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        [itsi_csv_import://DA-ITSI-TELEGRAF-KAFKA-entity_import_kafka_tasks]
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        entity_identifier_fields = kafka_task
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        entity_informational_fields = itsi_role,env,label
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        entity_title_field = kafka_task
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        import_from_search = 1
+index = default
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        index_earliest = -4h
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        index_latest = now
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        interval = 3 0,4,8,12,16,20 * * *
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        search_string = | savedsearch DA-ITSI-TELEGRAF-KAFKA-Inventory_Search_kafka_tasks
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        service_title_field = null
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        update_type = UPSERT
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        [itsi_csv_import://DA-ITSI-TELEGRAF-KAFKA-entity_import_kafka_topics]
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        entity_identifier_fields = kafka_topic
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        entity_informational_fields = itsi_role,env,label
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        entity_title_field = kafka_topic
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        import_from_search = 1
+index = default
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        index_earliest = -4h
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        index_latest = now
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        interval = 4 0,4,8,12,16,20 * * *
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        search_string = | savedsearch DA-ITSI-TELEGRAF-KAFKA-Inventory_Search_kafka_topics
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        service_title_field = null
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        update_type = UPSERT
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        [itsi_csv_import://DA-ITSI-TELEGRAF-KAFKA-entity_import_zookeeper]
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        entity_identifier_fields = zookeeper
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        entity_informational_fields = itsi_role,env,label
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        entity_title_field = zookeeper
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        import_from_search = 1
+index = default
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        index_earliest = -4h
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        index_latest = now
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        interval = 0 0,4,8,12,16,20 * * *
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        search_string = | savedsearch DA-ITSI-TELEGRAF-KAFKA-Inventory_Search_zookeeper
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        service_title_field = null
+/data/splunk/splunk/etc/apps/DA-ITSI-TELEGRAF-KAFKA/default/inputs.conf        update_type = UPSERT
+/data/splunk/splunk/etc/apps/DA-ITSI-VIRTUALIZATION/default/inputs.conf        [itsi_csv_import://DA-ITSI-VIRTUALIZATION-Datastore_Import]
+/data/splunk/splunk/etc/apps/DA-ITSI-VIRTUALIZATION/default/inputs.conf        disabled = 1
+/data/splunk/splunk/etc/apps/DA-ITSI-VIRTUALIZATION/default/inputs.conf        entity_description_column = description
+/data/splunk/splunk/etc/apps/DA-ITSI-VIRTUALIZATION/default/inputs.conf        entity_identifier_fields = datastore_name,datastore_id
+/data/splunk/splunk/etc/apps/DA-ITSI-VIRTUALIZATION/default/inputs.conf        entity_informational_fields = itsi_role,root_path,root_url,root_volume_type,storage_capacity_GB,storage_free_space_GB,serial,ip,datastore_version,vendor,vendor_product,type
+/data/splunk/splunk/etc/apps/DA-ITSI-VIRTUALIZATION/default/inputs.conf        entity_title_field = datastore_id
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/apps/DA-ITSI-VIRTUALIZATION/default/inputs.conf        import_from_search = 1
+index = default
+/data/splunk/splunk/etc/apps/DA-ITSI-VIRTUALIZATION/default/inputs.conf        index_earliest = -4d
+/data/splunk/splunk/etc/apps/DA-ITSI-VIRTUALIZATION/default/inputs.conf        index_latest = now
+/data/splunk/splunk/etc/apps/DA-ITSI-VIRTUALIZATION/default/inputs.conf        interval = 0 2,6,10,14,18,22 * * *
+/data/splunk/splunk/etc/apps/DA-ITSI-VIRTUALIZATION/default/inputs.conf        search_string = | savedsearch DA-ITSI-VIRTUALIZATION-Datastore_Search
+/data/splunk/splunk/etc/apps/DA-ITSI-VIRTUALIZATION/default/inputs.conf        service_title_field = null
+/data/splunk/splunk/etc/apps/DA-ITSI-VIRTUALIZATION/default/inputs.conf        update_type = UPSERT
+/data/splunk/splunk/etc/apps/DA-ITSI-VIRTUALIZATION/default/inputs.conf        [itsi_csv_import://DA-ITSI-VIRTUALIZATION-Hypervisor_Import]
+/data/splunk/splunk/etc/apps/DA-ITSI-VIRTUALIZATION/default/inputs.conf        disabled = 1
+/data/splunk/splunk/etc/apps/DA-ITSI-VIRTUALIZATION/default/inputs.conf        entity_description_column = description
+/data/splunk/splunk/etc/apps/DA-ITSI-VIRTUALIZATION/default/inputs.conf        entity_identifier_fields = hypervisor_name,hypervisor_id
+/data/splunk/splunk/etc/apps/DA-ITSI-VIRTUALIZATION/default/inputs.conf        entity_informational_fields = itsi_role,mem_capacity_MB,cpu_cores,logical_cpu_count,processor_socket_count,nic_count,nic_type,hyperthreading,processor,hypervisor_os,ip,cluster_id,cluster_name,datacenter,hypervisor_os_version,vendor,vendor_product,product,type
+/data/splunk/splunk/etc/apps/DA-ITSI-VIRTUALIZATION/default/inputs.conf        entity_title_field = hypervisor_id
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/apps/DA-ITSI-VIRTUALIZATION/default/inputs.conf        import_from_search = 1
+index = default
+/data/splunk/splunk/etc/apps/DA-ITSI-VIRTUALIZATION/default/inputs.conf        index_earliest = -4d
+/data/splunk/splunk/etc/apps/DA-ITSI-VIRTUALIZATION/default/inputs.conf        index_latest = now
+/data/splunk/splunk/etc/apps/DA-ITSI-VIRTUALIZATION/default/inputs.conf        interval = 0 0,4,8,12,16,20 * * *
+/data/splunk/splunk/etc/apps/DA-ITSI-VIRTUALIZATION/default/inputs.conf        search_string = | savedsearch DA-ITSI-VIRTUALIZATION-Hypervisor_Search
+/data/splunk/splunk/etc/apps/DA-ITSI-VIRTUALIZATION/default/inputs.conf        service_title_field = null
+/data/splunk/splunk/etc/apps/DA-ITSI-VIRTUALIZATION/default/inputs.conf        update_type = UPSERT
+/data/splunk/splunk/etc/apps/DA-ITSI-VIRTUALIZATION/default/inputs.conf        [itsi_csv_import://DA-ITSI-VIRTUALIZATION-Virtual_Machine_Import]
+/data/splunk/splunk/etc/apps/DA-ITSI-VIRTUALIZATION/default/inputs.conf        disabled = 1
+/data/splunk/splunk/etc/apps/DA-ITSI-VIRTUALIZATION/default/inputs.conf        entity_description_column = description
+/data/splunk/splunk/etc/apps/DA-ITSI-VIRTUALIZATION/default/inputs.conf        entity_identifier_fields = vm_name,vm_id
+/data/splunk/splunk/etc/apps/DA-ITSI-VIRTUALIZATION/default/inputs.conf        entity_informational_fields = itsi_role,storage_capacity_GB,mem_capacity_MB,cpu_cores,logical_cpu_count,power_state,vm_os,vm_os_version,ip,datastore,datastore_volume_path,hypervisor_id,hypervisor_name,cluster_id,cluster_name,hypervisor_os_version,vendor,vendor_product,type
+/data/splunk/splunk/etc/apps/DA-ITSI-VIRTUALIZATION/default/inputs.conf        entity_title_field = vm_id
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/apps/DA-ITSI-VIRTUALIZATION/default/inputs.conf        import_from_search = 1
+index = default
+/data/splunk/splunk/etc/apps/DA-ITSI-VIRTUALIZATION/default/inputs.conf        index_earliest = -4d
+/data/splunk/splunk/etc/apps/DA-ITSI-VIRTUALIZATION/default/inputs.conf        index_latest = now
+/data/splunk/splunk/etc/apps/DA-ITSI-VIRTUALIZATION/default/inputs.conf        interval = 0 1,5,9,13,17,21 * * *
+/data/splunk/splunk/etc/apps/DA-ITSI-VIRTUALIZATION/default/inputs.conf        search_string = | savedsearch DA-ITSI-VIRTUALIZATION-Virtual_Machine_Search
+/data/splunk/splunk/etc/apps/DA-ITSI-VIRTUALIZATION/default/inputs.conf        service_title_field = null
+/data/splunk/splunk/etc/apps/DA-ITSI-VIRTUALIZATION/default/inputs.conf        update_type = UPSERT
+/data/splunk/splunk/etc/apps/DA-ITSI-WEBSERVER/default/inputs.conf             [itsi_csv_import://DA-ITSI-WEBSERVER-WebServer_Entities_Import]
+/data/splunk/splunk/etc/apps/DA-ITSI-WEBSERVER/default/inputs.conf             disabled = 1
+/data/splunk/splunk/etc/apps/DA-ITSI-WEBSERVER/default/inputs.conf             entity_identifier_fields = web_server
+/data/splunk/splunk/etc/apps/DA-ITSI-WEBSERVER/default/inputs.conf             entity_informational_fields = itsi_role, host, vendor, vendor_product, version, dest_ip, dest_port, site
+/data/splunk/splunk/etc/apps/DA-ITSI-WEBSERVER/default/inputs.conf             entity_title_field = web_server
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/apps/DA-ITSI-WEBSERVER/default/inputs.conf             import_from_search = 1
+index = default
+/data/splunk/splunk/etc/apps/DA-ITSI-WEBSERVER/default/inputs.conf             index_earliest = -4h
+/data/splunk/splunk/etc/apps/DA-ITSI-WEBSERVER/default/inputs.conf             index_latest = now
+/data/splunk/splunk/etc/apps/DA-ITSI-WEBSERVER/default/inputs.conf             interval = 0 3,7,11,15,19,23 * * *
+/data/splunk/splunk/etc/apps/DA-ITSI-WEBSERVER/default/inputs.conf             search_string = | savedsearch DA-ITSI-WEBSERVER-WebServer_Entity_Search
+/data/splunk/splunk/etc/apps/DA-ITSI-WEBSERVER/default/inputs.conf             service_title_field = null
+/data/splunk/splunk/etc/apps/DA-ITSI-WEBSERVER/default/inputs.conf             update_type = UPSERT
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       [itsi_default_aggregation_policy_loader://default_policy_loader]
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       disabled = 0
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+index = default
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       [itsi_default_correlation_search_acl_loader://default_acl_loader]
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       disabled = 0
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+index = default
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       interval = -1
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       [itsi_entity_exchange_consumer://itsi_entity_exchange_consumer1]
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       disabled = 0
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+index = default
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       interval = 300
+/data/splunk/splunk/etc/apps/SA-ITSI-Licensechecker/default/inputs.conf        [itsi_license_checker://itsi_license_checker]
+/data/splunk/splunk/etc/apps/SA-ITSI-Licensechecker/default/inputs.conf        app_name = itsi
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+index = default
+/data/splunk/splunk/etc/apps/SA-ITSI-Licensechecker/default/inputs.conf        interval = 0 0 * * *
+/data/splunk/splunk/etc/apps/SA-ITSI-Licensechecker/default/inputs.conf        [itsi_license_checker://itsi_license_checker_unbundle]
+/data/splunk/splunk/etc/apps/SA-ITSI-Licensechecker/default/inputs.conf        app_name = itsi
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+index = default
+/data/splunk/splunk/etc/apps/SA-ITSI-Licensechecker/default/inputs.conf        interval = -1
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       [itsi_notable_event_actions_queue_consumer://alpha]
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       batch_size = 50
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       disabled = 0
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       exec_delay_time = 0.1
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+index = default
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       interval = 30
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       system_user_name = splunk-system-user
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       timeout = 7200
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       [itsi_notable_event_actions_queue_consumer://beta]
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       batch_size = 50
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       disabled = 0
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       exec_delay_time = 0.1
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+index = default
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       interval = 30
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       system_user_name = splunk-system-user
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       timeout = 7200
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       [itsi_notable_event_actions_queue_consumer://delta]
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       batch_size = 50
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       disabled = 1
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       exec_delay_time = 0.1
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+index = default
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       interval = 30
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       system_user_name = splunk-system-user
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       timeout = 7200
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       [itsi_notable_event_actions_queue_consumer://gamma]
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       batch_size = 50
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       disabled = 0
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       exec_delay_time = 0.1
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+index = default
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       interval = 30
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       system_user_name = splunk-system-user
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       timeout = 7200
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       [itsi_notable_event_actions_queue_consumer://zeta]
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       batch_size = 50
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       disabled = 1
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       exec_delay_time = 0.1
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+index = default
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       interval = 30
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       system_user_name = splunk-system-user
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       timeout = 7200
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       [itsi_notable_event_archive://age_notable_event]
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       disabled = 0
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+index = default
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       interval = 3600
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       [itsi_notable_event_hec_init://default_hec_initializer]
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       disabled = 0
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+index = default
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       interval = 600
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       [itsi_refresher://consistency]
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       disabled = 1
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+index = default
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       interval = 5
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       log_level = INFO
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       [itsi_scheduled_backup_caller://itsi_scheduled_backup]
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       disabled = 0
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+index = default
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       interval = 3600
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       [itsi_service_template_update_scheduler://itsi_service_template_update_scheduler]
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       disabled = 0
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+index = default
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       interval = 900
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       [itsi_upgrade://itsi_migration]
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       disabled = 0
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+index = default
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       log_level = INFO
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       [itsi_user_access_init://upgrade_capabilities]
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       app_name = itsi
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       disabled = 0
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+index = default
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       interval = 900
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       log_level = WARN
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       [maintenance_minder://populate_operative_maintenance_log]
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       disabled = 0
+host = ip-172-31-16-48.ap-northeast-2.compute.internal
+index = default
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       interval = 60
+/data/splunk/splunk/etc/system/default/inputs.conf                             [monitor:///data/splunk/splunk/etc/splunk.version]
+/data/splunk/splunk/etc/system/default/inputs.conf                             _TCP_ROUTING = *
+/data/splunk/splunk/etc/system/default/inputs.conf                             _rcvbuf = 1572864
+/data/splunk/splunk/etc/system/local/inputs.conf                               host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/system/default/inputs.conf                             index = _internal
+/data/splunk/splunk/etc/system/default/inputs.conf                             sourcetype = splunk_version
+/data/splunk/splunk/etc/apps/introspection_generator_addon/default/inputs.conf [monitor:///data/splunk/splunk/var/log/introspection]
+/data/splunk/splunk/etc/system/default/inputs.conf                             _rcvbuf = 1572864
+/data/splunk/splunk/etc/system/local/inputs.conf                               host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/apps/introspection_generator_addon/default/inputs.conf index = _introspection
+/data/splunk/splunk/etc/system/default/inputs.conf                             [monitor:///data/splunk/splunk/var/log/splunk]
+/data/splunk/splunk/etc/system/default/inputs.conf                             _rcvbuf = 1572864
+/data/splunk/splunk/etc/system/local/inputs.conf                               host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/system/default/inputs.conf                             index = _internal
+/data/splunk/splunk/etc/system/default/inputs.conf                             [monitor:///data/splunk/splunk/var/log/splunk/license_usage_summary.log]
+/data/splunk/splunk/etc/system/default/inputs.conf                             _rcvbuf = 1572864
+/data/splunk/splunk/etc/system/local/inputs.conf                               host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/system/default/inputs.conf                             index = _telemetry
+/data/splunk/splunk/etc/system/default/inputs.conf                             [monitor:///data/splunk/splunk/var/log/splunk/splunk_instrumentation_cloud.log*]
+/data/splunk/splunk/etc/system/default/inputs.conf                             _rcvbuf = 1572864
+/data/splunk/splunk/etc/system/local/inputs.conf                               host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/system/default/inputs.conf                             index = _telemetry
+/data/splunk/splunk/etc/system/default/inputs.conf                             sourcetype = splunk_cloud_telemetry
+/data/splunk/splunk/etc/system/default/inputs.conf                             [monitor:///data/splunk/splunk/var/log/watchdog/watchdog.log*]
+/data/splunk/splunk/etc/system/default/inputs.conf                             _rcvbuf = 1572864
+/data/splunk/splunk/etc/system/local/inputs.conf                               host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/system/default/inputs.conf                             index = _internal
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       [monitor:///data/splunk/splunk/var/run/splunk/dispatch/*/itsi_search*]
+/data/splunk/splunk/etc/system/default/inputs.conf                             _rcvbuf = 1572864
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       disabled = false
+/data/splunk/splunk/etc/system/local/inputs.conf                               host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       index = _internal
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       sourcetype = itsi_internal_log
+/data/splunk/splunk/etc/system/default/inputs.conf                             [script]
+/data/splunk/splunk/etc/system/default/inputs.conf                             _rcvbuf = 1572864
+/data/splunk/splunk/etc/system/local/inputs.conf                               host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/system/default/inputs.conf                             index = default
+/data/splunk/splunk/etc/system/default/inputs.conf                             interval = 60.0
+/data/splunk/splunk/etc/system/default/inputs.conf                             start_by_shell = true
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       [script:///data/splunk/splunk/etc/apps/SA-ITOA/bin/import_icons_SA_ITOA.py]
+/data/splunk/splunk/etc/system/default/inputs.conf                             _rcvbuf = 1572864
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       disabled = 0
+/data/splunk/splunk/etc/system/local/inputs.conf                               host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/system/default/inputs.conf                             index = default
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       interval = -1
+/data/splunk/splunk/etc/apps/SA-ITOA/default/inputs.conf                       passAuth = splunk-system-user
+/data/splunk/splunk/etc/apps/introspection_generator_addon/default/inputs.conf [script:///data/splunk/splunk/etc/apps/introspection_generator_addon/bin/collector.path]
+/data/splunk/splunk/etc/system/default/inputs.conf                             _rcvbuf = 1572864
+/data/splunk/splunk/etc/system/local/inputs.conf                               host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/system/default/inputs.conf                             index = default
+/data/splunk/splunk/etc/apps/introspection_generator_addon/default/inputs.conf interval = 0
+/data/splunk/splunk/etc/apps/introspection_generator_addon/default/inputs.conf sourcetype = splunk_resource_usage__internal
+/data/splunk/splunk/etc/apps/splunk_instrumentation/default/inputs.conf        [script:///data/splunk/splunk/etc/apps/splunk_instrumentation/bin/instrumentation.py]
+/data/splunk/splunk/etc/system/default/inputs.conf                             _rcvbuf = 1572864
+/data/splunk/splunk/etc/apps/splunk_instrumentation/default/inputs.conf        disabled = false
+/data/splunk/splunk/etc/system/local/inputs.conf                               host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/apps/splunk_instrumentation/default/inputs.conf        index = _telemetry
+/data/splunk/splunk/etc/apps/splunk_instrumentation/default/inputs.conf        interval = 0 * * * *
+/data/splunk/splunk/etc/apps/splunk_instrumentation/default/inputs.conf        passAuth = splunk-system-user
+/data/splunk/splunk/etc/apps/splunk_instrumentation/default/inputs.conf        source = instrumentation_scripted_input
+/data/splunk/splunk/etc/apps/splunk_instrumentation/default/inputs.conf        sourcetype = splunk_telemetry_log
+/data/splunk/splunk/etc/apps/splunk_instrumentation/default/inputs.conf        [script:///data/splunk/splunk/etc/apps/splunk_instrumentation/bin/on_splunk_start.py]
+/data/splunk/splunk/etc/system/default/inputs.conf                             _rcvbuf = 1572864
+/data/splunk/splunk/etc/apps/splunk_instrumentation/default/inputs.conf        disabled = false
+/data/splunk/splunk/etc/system/local/inputs.conf                               host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/system/default/inputs.conf                             index = default
+/data/splunk/splunk/etc/apps/splunk_instrumentation/default/inputs.conf        interval = -1
+/data/splunk/splunk/etc/apps/splunk_instrumentation/default/inputs.conf        passAuth = splunk-system-user
+/data/splunk/splunk/etc/apps/splunk_instrumentation/default/inputs.conf        [script:///data/splunk/splunk/etc/apps/splunk_instrumentation/bin/schedule_delete.py]
+/data/splunk/splunk/etc/system/default/inputs.conf                             _rcvbuf = 1572864
+/data/splunk/splunk/etc/apps/splunk_instrumentation/default/inputs.conf        disabled = false
+/data/splunk/splunk/etc/system/local/inputs.conf                               host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/system/default/inputs.conf                             index = default
+/data/splunk/splunk/etc/apps/splunk_instrumentation/default/inputs.conf        interval = 0 0 * * *
+/data/splunk/splunk/etc/apps/splunk_instrumentation/default/inputs.conf        passAuth = splunk-system-user
+/data/splunk/splunk/etc/apps/splunk_monitoring_console/default/inputs.conf     [script:///data/splunk/splunk/etc/apps/splunk_monitoring_console/bin/dmc_config.py]
+/data/splunk/splunk/etc/system/default/inputs.conf                             _rcvbuf = 1572864
+/data/splunk/splunk/etc/system/local/inputs.conf                               host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/system/default/inputs.conf                             index = default
+/data/splunk/splunk/etc/apps/splunk_monitoring_console/default/inputs.conf     interval = -1
+/data/splunk/splunk/etc/apps/splunk_monitoring_console/default/inputs.conf     passAuth = splunk-system-user
+/data/splunk/splunk/etc/system/default/inputs.conf                             [splunktcp]
+/data/splunk/splunk/etc/system/default/inputs.conf                             _rcvbuf = 1572864
+/data/splunk/splunk/etc/system/default/inputs.conf                             acceptFrom = *
+/data/splunk/splunk/etc/system/default/inputs.conf                             connection_host = ip
+/data/splunk/splunk/etc/system/local/inputs.conf                               host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/system/default/inputs.conf                             index = default
+/data/splunk/splunk/etc/system/default/inputs.conf                             route = has_key:_replicationBucketUUID:replicationQueue;has_key:_dstrx:typingQueue;has_key:_linebreaker:indexQueue;absent_key:_linebreaker:parsingQueue
+/data/splunk/splunk/etc/system/default/inputs.conf                             [tcp]
+/data/splunk/splunk/etc/system/default/inputs.conf                             _rcvbuf = 1572864
+/data/splunk/splunk/etc/system/default/inputs.conf                             acceptFrom = *
+/data/splunk/splunk/etc/system/default/inputs.conf                             connection_host = dns
+/data/splunk/splunk/etc/system/local/inputs.conf                               host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/system/default/inputs.conf                             index = default
+/data/splunk/splunk/etc/system/default/inputs.conf                             [udp]
+/data/splunk/splunk/etc/system/default/inputs.conf                             _rcvbuf = 1572864
+/data/splunk/splunk/etc/system/default/inputs.conf                             connection_host = ip
+/data/splunk/splunk/etc/system/local/inputs.conf                               host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/system/default/inputs.conf                             index = default

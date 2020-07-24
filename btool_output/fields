@@ -1,0 +1,524 @@
+/data/splunk/splunk/etc/system/default/fields.conf                         [_indextime]
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED = True
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = False
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/system/default/fields.conf                         [_sourcetype]
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED = True
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = False
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf [changeSet.summary.runtime.host.moid]
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf INDEXED = true
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = True
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf [changeSet.summary.runtime.host.type]
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf INDEXED = true
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = True
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf [cluster.moid]
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf INDEXED = true
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = True
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf [computeResource.computeResource.moid]
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf INDEXED = true
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = True
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf [computeResource.computeResource.type]
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf INDEXED = true
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = True
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/system/default/fields.conf                         [date_hour]
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED = True
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = False
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/system/default/fields.conf                         [date_mday]
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED = True
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = False
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/system/default/fields.conf                         [date_minute]
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED = True
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = False
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/system/default/fields.conf                         [date_month]
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED = True
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = False
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/system/default/fields.conf                         [date_second]
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED = True
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = False
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/system/default/fields.conf                         [date_wday]
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED = True
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = False
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/system/default/fields.conf                         [date_year]
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED = True
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = False
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/system/default/fields.conf                         [date_zone]
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED = True
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = False
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/system/default/fields.conf                         [default]
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED = False
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = True
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf [detail.AutoScalingGroupName]
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf INDEXED = true
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = True
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf [detail.awsRegion]
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf INDEXED = true
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = True
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf [detail.requestParameters.ModifyVolumeRequest.VolumeId]
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf INDEXED = true
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = True
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf [detail.requestParameters.autoScalingGroupName]
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf INDEXED = true
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = True
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf [detail.requestParameters.bucketName]
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf INDEXED = true
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = True
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf [detail.requestParameters.dBInstanceIdentifier]
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf INDEXED = true
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = True
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf [detail.requestParameters.volumeId]
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf INDEXED = true
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = True
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf [detail.responseElements.volumeId]
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf INDEXED = true
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = True
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf [dimension_encoded]
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf INDEXED = true
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = True
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [docker_container_id]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf [entity.moid]
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf INDEXED = true
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = True
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf [entity.type]
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf INDEXED = true
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = True
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf [entity_class]
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf INDEXED = true
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = True
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/system/default/fields.conf                         [evtlog_account]
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED = True
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = False
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/system/default/fields.conf                         [evtlog_category]
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED = True
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = False
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/system/default/fields.conf                         [evtlog_domain]
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED = True
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = False
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/system/default/fields.conf                         [evtlog_id]
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED = True
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = False
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/system/default/fields.conf                         [evtlog_severity]
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED = True
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = False
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/system/default/fields.conf                         [evtlog_sid]
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED = True
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = False
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/system/default/fields.conf                         [evtlog_sid_type]
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED = True
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = False
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/system/default/fields.conf                         [host]
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED = True
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = False
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf [host.host.moid]
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf INDEXED = true
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = True
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf [host.host.type]
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf INDEXED = true
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = True
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/system/default/fields.conf                         [index]
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED = True
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = False
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/itsi/default/fields.conf                      [indexed_is_service_aggregate]
+/data/splunk/splunk/etc/apps/itsi/default/fields.conf                      INDEXED = true
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = True
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/itsi/default/fields.conf                      [indexed_is_service_max_severity_event]
+/data/splunk/splunk/etc/apps/itsi/default/fields.conf                      INDEXED = true
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = True
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/itsi/default/fields.conf                      [indexed_itsi_kpi_id]
+/data/splunk/splunk/etc/apps/itsi/default/fields.conf                      INDEXED = true
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = True
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/itsi/default/fields.conf                      [indexed_itsi_service_id]
+/data/splunk/splunk/etc/apps/itsi/default/fields.conf                      INDEXED = true
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = True
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf [instanceid]
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf INDEXED = true
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = True
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf [key]
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf INDEXED = true
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = True
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_cluster]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_cluster_eval]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = false
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_container_id]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_container_image]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_container_imageid]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_container_name]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_cronjob_annotations]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_cronjob_id]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_cronjob_labels]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_cronjob_name]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_daemonset_annotations]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_daemonset_id]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_daemonset_labels]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_daemonset_name]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_deployment_annotations]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_deployment_id]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_deployment_labels]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_deployment_name]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_host_ip]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_job_annotations]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_job_id]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_job_labels]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_job_name]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_namespace]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_namespace_annotations]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_namespace_labels]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_node_annotations]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_node_id]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_node_info_architecture]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_node_info_bootid]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_node_info_containerruntimeversion]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_node_info_kernelversion]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_node_info_kubeletversion]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_node_info_kubeproxyversion]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_node_info_machineid]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_node_info_operatingsystem]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_node_info_osimage]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_node_info_systemuuid]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_node_labels]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_node_name]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_pod_annotations]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_pod_id]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_pod_ip]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_pod_labels]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_pod_name]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_replicaset_annotations]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_replicaset_id]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_replicaset_labels]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_replicaset_name]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_replicationcontroller_annotations]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_replicationcontroller_id]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_replicationcontroller_labels]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_replicationcontroller_name]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_statefulset_annotations]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_statefulset_id]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_statefulset_labels]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_statefulset_name]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [kubernetes_stats_object]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/system/default/fields.conf                         [linecount]
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED = True
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = False
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf [metadata.name]
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf INDEXED = true
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = True
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf [moid]
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf INDEXED = true
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = True
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf [namespace]
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf INDEXED = true
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = True
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf [pod]
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf INDEXED = true
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = True
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [proc__p__cmdline]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [proc__p__stat__comm]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [proc__p__stat__pgrp]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [proc__p__stat__pid]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [proc__p__stat__ppid]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [proc__p__stat__priority]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [proc__p__stat__state]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/system/default/fields.conf                         [punct]
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED = True
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = False
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf [rdsname]
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf INDEXED = true
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = True
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf [result.attempted{}.vm.moid]
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf INDEXED = true
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = True
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf [result.attempted{}.vm.type]
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf INDEXED = true
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = True
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/system/default/fields.conf                         [source]
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED = True
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = False
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/system/default/fields.conf                         [sourcetype]
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED = True
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = False
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/system/default/fields.conf                         [splunk_server]
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED = True
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = False
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/system/default/fields.conf                         [splunk_server_group]
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED = True
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = False
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [stream]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [syslog_component]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [syslog_hostname]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      [syslog_pid]
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED = true
+/data/splunk/splunk/etc/apps/monitoringkubernetes/default/fields.conf      INDEXED_VALUE = false
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/system/default/fields.conf                         [timeendpos]
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED = True
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = False
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/system/default/fields.conf                         [timestartpos]
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED = True
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = False
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf [title]
+/data/splunk/splunk/etc/apps/splunk_app_infrastructure/default/fields.conf INDEXED = true
+/data/splunk/splunk/etc/system/default/fields.conf                         INDEXED_VALUE = True
+/data/splunk/splunk/etc/system/default/fields.conf                         TOKENIZER = 

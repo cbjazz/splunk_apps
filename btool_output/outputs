@@ -1,0 +1,36 @@
+/data/splunk/splunk/etc/system/default/outputs.conf [syslog]
+/data/splunk/splunk/etc/system/default/outputs.conf maxEventSize = 1024
+/data/splunk/splunk/etc/system/default/outputs.conf priority = <13>
+/data/splunk/splunk/etc/system/default/outputs.conf type = udp
+/data/splunk/splunk/etc/system/default/outputs.conf [tcpout]
+/data/splunk/splunk/etc/system/default/outputs.conf ackTimeoutOnShutdown = 30
+/data/splunk/splunk/etc/system/default/outputs.conf autoLBFrequency = 30
+/data/splunk/splunk/etc/system/default/outputs.conf autoLBVolume = 0
+/data/splunk/splunk/etc/system/default/outputs.conf blockOnCloning = true
+/data/splunk/splunk/etc/system/default/outputs.conf blockWarnThreshold = 100
+/data/splunk/splunk/etc/system/default/outputs.conf cipherSuite = ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256:AES256-GCM-SHA384:AES128-GCM-SHA256:AES128-SHA256:ECDH-ECDSA-AES256-GCM-SHA384:ECDH-ECDSA-AES128-GCM-SHA256:ECDH-ECDSA-AES256-SHA384:ECDH-ECDSA-AES128-SHA256
+/data/splunk/splunk/etc/system/default/outputs.conf compressed = false
+/data/splunk/splunk/etc/system/default/outputs.conf connectionTTL = 0
+/data/splunk/splunk/etc/system/default/outputs.conf connectionTimeout = 20
+/data/splunk/splunk/etc/system/default/outputs.conf disabled = false
+/data/splunk/splunk/etc/system/default/outputs.conf dropClonedEventsOnQueueFull = 5
+/data/splunk/splunk/etc/system/default/outputs.conf dropEventsOnQueueFull = -1
+/data/splunk/splunk/etc/system/default/outputs.conf ecdhCurves = prime256v1, secp384r1, secp521r1
+/data/splunk/splunk/etc/system/default/outputs.conf forceTimebasedAutoLB = false
+/data/splunk/splunk/etc/system/default/outputs.conf forwardedindex.0.whitelist = .*
+/data/splunk/splunk/etc/system/default/outputs.conf forwardedindex.1.blacklist = _.*
+/data/splunk/splunk/etc/system/default/outputs.conf forwardedindex.2.whitelist = (_audit|_internal|_introspection|_telemetry)
+/data/splunk/splunk/etc/system/default/outputs.conf forwardedindex.filter.disable = false
+/data/splunk/splunk/etc/system/default/outputs.conf heartbeatFrequency = 30
+/data/splunk/splunk/etc/system/default/outputs.conf indexAndForward = false
+/data/splunk/splunk/etc/system/default/outputs.conf maxConnectionsPerIndexer = 2
+/data/splunk/splunk/etc/system/default/outputs.conf maxFailuresPerInterval = 2
+/data/splunk/splunk/etc/system/default/outputs.conf maxQueueSize = auto
+/data/splunk/splunk/etc/system/default/outputs.conf readTimeout = 300
+/data/splunk/splunk/etc/system/default/outputs.conf secsInFailureInterval = 1
+/data/splunk/splunk/etc/system/default/outputs.conf sendCookedData = true
+/data/splunk/splunk/etc/system/default/outputs.conf sslQuietShutdown = false
+/data/splunk/splunk/etc/system/default/outputs.conf sslVersions = tls1.2
+/data/splunk/splunk/etc/system/default/outputs.conf tcpSendBufSz = 0
+/data/splunk/splunk/etc/system/default/outputs.conf useACK = false
+/data/splunk/splunk/etc/system/default/outputs.conf writeTimeout = 300
