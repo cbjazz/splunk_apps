@@ -5,3 +5,7 @@ modtime = 1595562039.599024000
 [app/launcher]
 version = 8.0.0
 modtime = 1595562039.600853000
+
+[nav/default]
+version = 8.0.0
+modtime = 1595563584.535258000
