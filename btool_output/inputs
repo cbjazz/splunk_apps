@@ -752,6 +752,13 @@ index = default
 /data/splunk/splunk/etc/system/default/inputs.conf                             index = default
 /data/splunk/splunk/etc/apps/introspection_generator_addon/default/inputs.conf interval = 0
 /data/splunk/splunk/etc/apps/introspection_generator_addon/default/inputs.conf sourcetype = splunk_resource_usage__internal
+/data/splunk/splunk/etc/apps/splunk-dashboard-app/default/inputs.conf          [script:///data/splunk/splunk/etc/apps/splunk-dashboard-app/bin/save_image_and_icon_on_install.py]
+/data/splunk/splunk/etc/system/default/inputs.conf                             _rcvbuf = 1572864
+/data/splunk/splunk/etc/system/local/inputs.conf                               host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/system/default/inputs.conf                             index = default
+/data/splunk/splunk/etc/apps/splunk-dashboard-app/default/inputs.conf          interval = -1
+/data/splunk/splunk/etc/apps/splunk-dashboard-app/default/inputs.conf          passAuth = splunk-system-user
+/data/splunk/splunk/etc/apps/splunk-dashboard-app/default/inputs.conf          python.version = python3
 /data/splunk/splunk/etc/apps/splunk_instrumentation/default/inputs.conf        [script:///data/splunk/splunk/etc/apps/splunk_instrumentation/bin/instrumentation.py]
 /data/splunk/splunk/etc/system/default/inputs.conf                             _rcvbuf = 1572864
 /data/splunk/splunk/etc/apps/splunk_instrumentation/default/inputs.conf        disabled = false
