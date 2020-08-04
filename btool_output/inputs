@@ -1,10 +1,12 @@
-/data/splunk/splunk/etc/system/default/inputs.conf                             [SSL]
+/data/splunk/splunk/etc/system/local/inputs.conf                               [SSL]
 /data/splunk/splunk/etc/system/default/inputs.conf                             _rcvbuf = 1572864
 /data/splunk/splunk/etc/system/default/inputs.conf                             allowSslRenegotiation = true
 /data/splunk/splunk/etc/system/default/inputs.conf                             cipherSuite = ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256
 /data/splunk/splunk/etc/system/default/inputs.conf                             ecdhCurves = prime256v1, secp384r1, secp521r1
 /data/splunk/splunk/etc/system/local/inputs.conf                               host = ip-172-31-16-48.ap-northeast-2.compute.internal
 /data/splunk/splunk/etc/system/default/inputs.conf                             index = default
+/data/splunk/splunk/etc/system/local/inputs.conf                               serverCert = $SPLUNK_HOME/etc/auth/mycerts/mySplunkCert.pem
+/data/splunk/splunk/etc/system/local/inputs.conf                               sslPassword = $7$usxyFc3f1FdR/iA8dcszbcyMSWr7W3sYR9iHw4jqcWItaj4jAFe/ew==
 /data/splunk/splunk/etc/system/default/inputs.conf                             sslQuietShutdown = false
 /data/splunk/splunk/etc/system/default/inputs.conf                             sslVersions = tls1.2
 /data/splunk/splunk/etc/apps/Splunk_TA_aws/local/inputs.conf                   [aws_cloudwatch://MyCloudWatchMetric_75696332-3126-45c7-b3f2-a3fbbd2f3515]
@@ -795,6 +797,11 @@ index = default
 /data/splunk/splunk/etc/system/local/inputs.conf                               host = ip-172-31-16-48.ap-northeast-2.compute.internal
 /data/splunk/splunk/etc/system/default/inputs.conf                             index = default
 /data/splunk/splunk/etc/system/default/inputs.conf                             route = has_key:_replicationBucketUUID:replicationQueue;has_key:_dstrx:typingQueue;has_key:_linebreaker:indexQueue;absent_key:_linebreaker:parsingQueue
+/data/splunk/splunk/etc/system/local/inputs.conf                               [splunktcp-ssl:9997]
+/data/splunk/splunk/etc/system/default/inputs.conf                             _rcvbuf = 1572864
+/data/splunk/splunk/etc/system/local/inputs.conf                               disabled = 0
+/data/splunk/splunk/etc/system/local/inputs.conf                               host = ip-172-31-16-48.ap-northeast-2.compute.internal
+/data/splunk/splunk/etc/system/default/inputs.conf                             index = default
 /data/splunk/splunk/etc/system/default/inputs.conf                             [tcp]
 /data/splunk/splunk/etc/system/default/inputs.conf                             _rcvbuf = 1572864
 /data/splunk/splunk/etc/system/default/inputs.conf                             acceptFrom = *
