@@ -5,11 +5,10 @@
 /data/splunk/splunk/etc/system/default/inputs.conf                             ecdhCurves = prime256v1, secp384r1, secp521r1
 /data/splunk/splunk/etc/system/local/inputs.conf                               host = ip-172-31-16-48.ap-northeast-2.compute.internal
 /data/splunk/splunk/etc/system/default/inputs.conf                             index = default
-/data/splunk/splunk/etc/system/local/inputs.conf                               password = $7$YV32ZMsfmeVS216Wh63kfyr3DxEOz9w+n/TQ+YcV+gM1BqeUKmBRyg==
-/data/splunk/splunk/etc/system/local/inputs.conf                               rootCA = $SPLUNK_HOME/etc/auth/mycerts/my-rootca.pem
 /data/splunk/splunk/etc/system/local/inputs.conf                               serverCert = $SPLUNK_HOME/etc/auth/mycerts/mySplunkCert.pem
+/data/splunk/splunk/etc/system/local/inputs.conf                               sslPassword = $7$x/SNiliOFNDWMNL7H31mzlgRtdibwjvYKCw8jpjcjJNIaeoSuvAdPA==
 /data/splunk/splunk/etc/system/default/inputs.conf                             sslQuietShutdown = false
-/data/splunk/splunk/etc/system/local/inputs.conf                               sslVersions = tls1.2
+/data/splunk/splunk/etc/system/default/inputs.conf                             sslVersions = tls1.2
 /data/splunk/splunk/etc/apps/Splunk_TA_aws/local/inputs.conf                   [aws_cloudwatch://MyCloudWatchMetric_75696332-3126-45c7-b3f2-a3fbbd2f3515]
 /data/splunk/splunk/etc/apps/Splunk_TA_aws/local/inputs.conf                   aws_account = Changbai Choi
 /data/splunk/splunk/etc/apps/Splunk_TA_aws/local/inputs.conf                   aws_region = ap-northeast-2
